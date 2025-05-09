@@ -10,6 +10,7 @@ import {Card, CardContent} from '@/components/ui/card'
 import {router, usePage} from "@inertiajs/vue3";
 import {computed} from "vue";
 
+//p
 const cart = computed(() => usePage().props.cart)
 
 const updateQuantity = (itemId: string, change: number) => {

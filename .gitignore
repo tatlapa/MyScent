@@ -1,18 +1,24 @@
-# Laravel & PHP
-/vendor
+/.phpunit.cache
+/bootstrap/ssr
 /node_modules
+/public/build
+/public/hot
 /public/storage
 /storage/*.key
+/storage/pail
+/vendor
 .env
+.env.backup
+.env.production
+.phpactor.json
 .phpunit.result.cache
-Homestead.yaml
 Homestead.json
-/.vagrant
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
 /.idea
-/.DS_Store
-
-# Vite & front
-/resources/js/**/*.tsbuildinfo
-/resources/js/**/.vite
-/public/hot
-/public/build
+/.nova
+/.vscode
+/.zed

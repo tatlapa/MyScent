@@ -1,0 +1,18 @@
+# Laravel & PHP
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/.vagrant
+/.idea
+/.DS_Store
+
+# Vite & front
+/resources/js/**/*.tsbuildinfo
+/resources/js/**/.vite
+/public/hot
+/public/build

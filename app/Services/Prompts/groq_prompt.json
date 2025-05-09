@@ -1,0 +1,36 @@
+{
+    "customization": {
+        "template": "As a master perfumer, create a fragrance description based on these custom preferences:\n\n{{preferences}}\n\n**Your Task:**\n\nCreate a brief, evocative description (maximum 40 words) that captures how these preferences would translate into a unique fragrance. Focus on the sensory experience and emotional impact.\n\nThe description should be specific, memorable, and highlight how each preference influences the final fragrance.",
+        "format": {
+            "preferences": "* **{{category}}:** {{value}}"
+        }
+    },
+    "main": {
+        "template": "You are a master perfumer tasked with creating a unique fragrance.\nDescribe this perfume based on the following characteristics provided by the user:\n\n{{characteristics}}\n\n**Your Task:**\n\n1. Craft a single, evocative sentence (maximum of 40 words) that captures the essence of this unique fragrance. Describe its character, key notes, and the overall impression it creates.\n2. Recommend a real, existing perfume that best matches these preferences. Provide the name of the perfume and a match percentage (0-100) indicating how well it fits.\n\nFormat your response as follows:\n\n{\n  \"description\": \"[Your scent description]\",\n  \"perfume\": \"[Name of the existing perfume]\",\n  \"match\": [Match percentage]\n}",
+        "format": {
+            "gender": "* **Target Gender:** {{value}}",
+            "age": "* **Target Age Group:** {{value}}",
+            "emotions": "* **Desired Emotions:** This fragrance should evoke feelings of {{value}}.",
+            "occasions": "* **Ideal Occasions:** This perfume is intended for use during {{value}}.",
+            "color": "* **Color Inspiration:** The color {{value}} should be reflected in the fragrance's character.",
+            "scentFamilies": "* **Scent Families:** The perfume should incorporate these scent families: {{value}}.",
+            "story": "* **Story:** {{value}}",
+            "nature": "* **Nature Inspiration:** {{value}}",
+            "style": "* **Style:** {{value}}"
+        }
+    },
+    "perfume": {
+        "template": "You are a master perfumer tasked with creating a unique fragrance.\nRecommend a real, existing perfume that best matches the following characteristics provided by the user:\n\n{{characteristics}}\n\n**Your Task:**\n\nProvide the name of the perfume and a match percentage (0-100) indicating how well it fits.\n\nFormat your response as follows:\n\n{\n  \"perfume\": \"[Name of the existing perfume]\",\n  \"match\": [Match percentage],\n  \"description\": \"[Your scent description]\"\n}",
+        "format": {
+            "gender": "* **Target Gender:** {{value}}",
+            "age": "* **Target Age Group:** {{value}}",
+            "emotions": "* **Desired Emotions:** This fragrance should evoke feelings of {{value}}.",
+            "occasions": "* **Ideal Occasions:** This perfume is intended for use during {{value}}.",
+            "color": "* **Color Inspiration:** The color {{value}} should be reflected in the fragrance's character.",
+            "scentFamilies": "* **Scent Families:** The perfume should incorporate these scent families: {{value}}.",
+            "story": "* **Story:** {{value}}",
+            "nature": "* **Nature Inspiration:** {{value}}",
+            "style": "* **Style:** {{value}}"
+        }
+    }
+}

@@ -24,11 +24,11 @@ RUN composer install --no-dev --optimize-autoloader
 # Install Node dependencies and build assets
 RUN npm install && npm run build
 
-# Set permissions (optionnel, selon ton projet)
+# Set permissions (optionnel)
 RUN chown -R www-data:www-data /var/www
 
-# Expose port 8000 (used by php artisan serve)
+# Expose port used by Laravel
 EXPOSE 8000
 
-# Start Laravel server
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+# Start Laravel (migrate + link + serve)
+CMD bash -c "php artisan migrate --force && php artisan storage:link && php artisan serve --host=0.0.0.0 --port=8000"

@@ -25,7 +25,7 @@ var e = String.prototype.replace, r = /%20/g, n = "RFC3986", o = { default: n, f
   return e.call(t4, r, "+");
 }, RFC3986: function(t4) {
   return String(t4);
-} }, RFC1738: "RFC1738", RFC3986: n }, i = Object.prototype.hasOwnProperty, u = Array.isArray, a = function() {
+} }, RFC1738: "RFC1738" }, i = Object.prototype.hasOwnProperty, u = Array.isArray, a = function() {
   for (var t4 = [], e2 = 0; e2 < 256; ++e2) t4.push("%" + ((e2 < 16 ? "0" : "") + e2.toString(16)).toUpperCase());
   return t4;
 }(), s = function(t4, e2) {
@@ -351,7 +351,7 @@ createServer(
     title: (title) => `${title} - ${appName}`,
     resolve: (name) => resolvePageComponent(
       `./pages/${name}.vue`,
-      /* @__PURE__ */ Object.assign({ "./pages/Home.vue": () => import("./assets/Home-DfBkbfBw.js"), "./pages/cart/Checkout.vue": () => import("./assets/Checkout-DVp9e4l-.js"), "./pages/cart/Index.vue": () => import("./assets/Index-B-P5tXuI.js") })
+      /* @__PURE__ */ Object.assign({ "./pages/Home.vue": () => import("./assets/Home-CjchjrJI.js"), "./pages/cart/Checkout.vue": () => import("./assets/Checkout-D_EbeKSM.js"), "./pages/cart/Index.vue": () => import("./assets/Index-BIdg1USM.js") })
     ),
     setup({ App, props, plugin }) {
       return createSSRApp({ render: () => h$1(App, props) }).use(plugin).use(k, {
